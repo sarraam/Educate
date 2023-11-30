@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<Html>  
+ <head>
+  <style>
+* {
+margin: 0
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #6699cc;
+}
+
+.container h1 {
+  color: white;
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+.registartion-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #154a68;
+  padding: 20px;
+}
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+.registartion-form input:focus,
+.registartion-form textarea:focus {
+  box-shadow: 3px 3px 10px rgb(228, 228, 228), -3px -3px 10px rgb(224, 224, 224);
+}
+
+.registartion-form .submit {
+  width: 100%;
+  padding: 8px 0;
+  font-size: 20px;
+  color: rgb(44, 44, 44);
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.registartion-form .submit:hover {
+  box-shadow: 3px 3px 6px rgb(255, 214, 176);
+}
+        </style>
+        <title>Form</title>
+    </head>
+    <link rel="stylesheet" href="css/style.css">
+    <body>
+    <header>
+        <h1><a href="#" class="logo">Educate</a></h1>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Form.html">Form</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+    </header> 
+    <body ><div class="container">
+        <h1>Student Registeration Form</h1>
+        <form name="registration" class="registartion-form" onsubmit="return formValidation()">
+          <table>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="First name"></td>
+            </tr>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td><input type="text" name="name" id="name" placeholder="Last name"></td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td><input type="text" name="email" id="email" placeholder="your email"></td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+              <td><label for="phoneNumber">Phone Number:</label></td>
+              <td><input type="number" name="phoneNumber" id="phoneNumber"></td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender:</label></td>
+              <td>Male: <input type="radio" name="gender" value="male">
+                Female: <input type="radio" name="gender" value="female">
+            </tr>
+            <tr>
+                <td>Choose any languages you speak:</td><br>
+                <td><input type="checkbox" name="languages2" >English<br>
+                    <input type="checkbox" name="languages3" >Arabic</td>
+            </tr>
+            <tr>
+                <td><label for="courses">courses</label></td>
+                <td>
+                  <select name="courses" id="courses">
+                    <option value="">Select courses</option>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="MIS">MIS</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Accounting">Accounting</option>
+                  </select>
+                </td>
+            </tr>
+            <tr>
+              <td><label for="about">About:</label></td>
+              <td><textarea name="about" id="about" placeholder="Write about yourself..."></textarea></td>
+            </tr>
+            <tr>
+              <td colspan="2"><input type="submit" class="submit" value="Register" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
